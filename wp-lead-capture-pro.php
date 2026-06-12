@@ -3,7 +3,7 @@
  * Plugin Name:       WP Lead Capture Pro
  * Description:       Lead capture form with Stripe Payment Intent and Zapier webhook integration.
  * Version:           1.0.0
- * Author:            ClanDevs
+ * Author:            Anisur Rahman
  * Text Domain:       wp-lead-capture-pro
  * Requires PHP:      8.0
  * Requires at least: 6.0

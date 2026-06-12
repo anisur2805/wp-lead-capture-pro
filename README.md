@@ -74,7 +74,7 @@ Source assets live in `assets/src/`; Gulp outputs minified files to
 
 ## Repository
 
-GitHub: `https://github.com/clandevs/wp-lead-capture-pro` *(placeholder)*
+GitHub: `https://github.com/anisur2805/wp-lead-capture-pro` *(placeholder)*
 
 ## License
 
