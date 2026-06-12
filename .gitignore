@@ -1,0 +1,11 @@
+# Dependencies
+/vendor/
+/node_modules/
+
+# OS
+.DS_Store
+
+instructions.md
+
+# Logs
+*.log

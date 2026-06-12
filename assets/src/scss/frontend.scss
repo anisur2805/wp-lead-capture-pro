@@ -1,0 +1,126 @@
+// WP Lead Capture Pro — frontend form styles.
+
+$color-error: #dc3545;
+$color-primary: #1e3a8a;
+$color-primary-hover: #1d4ed8;
+$color-success-bg: #d1e7dd;
+$color-success-text: #0f5132;
+$color-error-bg: #f8d7da;
+$color-error-text: #842029;
+
+.wplcp-form-wrap {
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 24px;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+	box-sizing: border-box;
+
+	*,
+	*::before,
+	*::after {
+		box-sizing: inherit;
+	}
+
+	.wplcp-title {
+		margin: 0 0 16px;
+		font-size: 1.4em;
+	}
+
+	.wplcp-notice {
+		margin-bottom: 16px;
+		padding: 10px 14px;
+		border-radius: 4px;
+		font-size: 0.95em;
+
+		&.wplcp-notice-success {
+			background: $color-success-bg;
+			color: $color-success-text;
+		}
+
+		&.wplcp-notice-error {
+			background: $color-error-bg;
+			color: $color-error-text;
+		}
+	}
+
+	.wplcp-field {
+		margin-bottom: 16px;
+
+		label {
+			display: block;
+			margin-bottom: 6px;
+			font-weight: 600;
+
+			span {
+				color: $color-error;
+			}
+		}
+
+		input,
+		textarea {
+			width: 100%;
+			padding: 8px 10px;
+			border: 1px solid #ccd0d4;
+			border-radius: 4px;
+			font: inherit;
+
+			&:focus {
+				outline: none;
+				border-color: $color-primary;
+				box-shadow: 0 0 0 1px $color-primary;
+			}
+		}
+	}
+
+	.wplcp-error {
+		display: block;
+		margin-top: 4px;
+		color: $color-error;
+		font-size: 0.85em;
+	}
+
+	#wplcp-stripe-container {
+		margin-bottom: 16px;
+
+		#wplcp-card-element {
+			padding: 10px;
+			border: 1px solid #ccd0d4;
+			border-radius: 4px;
+			background: #fff;
+		}
+	}
+
+	.wplcp-submit {
+		display: inline-block;
+		width: 100%;
+		padding: 10px 18px;
+		border: 0;
+		border-radius: 4px;
+		background: $color-primary;
+		color: #fff;
+		font-size: 1em;
+		font-weight: 600;
+		cursor: pointer;
+		transition: background 0.15s ease-in-out;
+
+		&:hover,
+		&:focus {
+			background: $color-primary-hover;
+		}
+
+		&:disabled {
+			opacity: 0.6;
+			cursor: not-allowed;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.wplcp-form-wrap {
+		max-width: 100%;
+		border-radius: 0;
+		box-shadow: none;
+	}
+}
